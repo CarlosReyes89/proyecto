@@ -36,6 +36,11 @@
     <!-- inicio menú-->
          <!-- inicio menu-->
          <nav class="navbar navbar-expand-lg navbar-light shadow">
+            <div class="container d-flex justify-content-between align-items-center">
+
+                <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                    Pintu-Roma
+                </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -46,25 +51,63 @@
                 <div class="align-self-center collapse navbar-collapse flex-fill d-lg-flex justify-content-lg-between" id="opciones">
                     <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">A cerca de</a>
+                            <a class="nav-link" href="acercade.html">A cerca de</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="compras.html">Compras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Productos</a>
+                            <a class="nav-link" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
-            </div>
+                <div class="navbar align-self-center d-flex">
+                    <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar ...">
+                            <div class="input-group-text">
+                                <i class="fa fa-fw fa-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">0</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+9</span>
+                    </a>
+                </div>
+            </div>            
         </nav>
     <!-- fin menu-->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Buscar ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                    
+                </div>
+                <p><br>Escriba el producto a Buscar ...</p>
+            </form>
+        </div>
+    </div>
      <!-- inicio secciones-->
       <!-- carrusel-->
       <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -82,7 +125,7 @@
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
-                                <h1 class="h1 text-success"><b>Pintu-Roma</b> eCommerce</h1>
+                                <h1 class="h1 text-success"><b>Pintu-Roma</b> tu FerreConfiable</h1>
                                 <h3 class="h2">La tienda de pinturas en Santa Marta</h3>
                                 <p>
                                     Pintu-Roma Ventas y comercialización de productos de ferreteria en la ciudad de Santa Marta <a rel="sponsored" class="text-success" href="#" target="_blank">Ventas</a> website. 
@@ -173,7 +216,72 @@
 
 
     </section>
-     
+    <section class="bg-light">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">Productos destacados...</h1>
+                    <p>
+                        Los productos destacados del mes son:
+                    </p>
+                </div>
+            </div>
+        
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="#">
+                        <img src="assets/img/feature_prod_01.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li class="text-muted text-right">$250.000</li>
+                        </ul>
+                        <p>
+                            preparacion de cuñete tipo2 de pintura hecha a por nuestro preparador
+                        </p>
+                        <p class="text-muted">Vistas (30)</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="#">
+                        <img src="assets/img/feature_prod_02.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li class="text-muted text-right">$250.000</li>
+                        </ul>
+                        <p>
+                            Motobombas de 1/2, 1 y 2 caballos de fuerza
+                        </p>
+                        <p class="text-muted">Vistas (30)</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card h-100">
+                    <a href="#">
+                        <img src="assets/img/feature_prod_01.jpg" class="card-img-top">
+                    </a>
+                    <div class="card-body">
+                        <ul class="list-unstyled d-flex justify-content-between">
+                            <li class="text-muted text-right">$250.000</li>
+                        </ul>
+                        <p>
+                            Elementos Electrónicos que ofrecemos en la tienda
+                        </p>
+                        <p class="text-muted">Vistas (30)</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
      <!-- fin secciones-->
 
     <!-- inicio de pie-->
@@ -219,7 +327,32 @@
                     </ul>
                 </div>
             </div>
-
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">Escriba su Email</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">Subscribirse</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="w-100 bg-black py-3">
             <div class="container">
@@ -232,6 +365,12 @@
         </div>
     </footer>
     <!-- fin de pie-->
+      <!-- archivos js-->
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+      <script src="assets/js/jquery-1.11.0.min.js"></script>
+      <script src="assets/js/templatemo.js"></script>
+      <script src="assets/js/custom.js"></script>
 
 
 </body>
